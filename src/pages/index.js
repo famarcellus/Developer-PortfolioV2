@@ -1,5 +1,10 @@
 import React from "react"
+import Navbar from "../components/sections/Navbar"
 
 export default function Home() {
-  return <div>Portfolio</div>
+  return (
+    <div>
+    <Navbar />
+    </div>
+  )
 }
