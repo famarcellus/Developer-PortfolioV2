@@ -65,19 +65,42 @@ body {
 
 a {
     text-decoration: none;
-    color: grey;
+    // color: black;
 }
 
 a:visited {
     text-decoration: none;
-    color: grey;
+    color: black;
 }
 
 .flex-container {
     display: flex;
 }
 
+.myButton {
+    will-change: transform, box-shadow;
+	background-color:#292929;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+    text-decoration:none;
+    font-family: 'Nunito Sans', sans-serif;
+
+    animation: pulse-black 3.5s infinite;
+}
+.myButton:hover {
+	background-color: #333;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 nav {
+
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     color: grey;
@@ -87,32 +110,94 @@ nav {
     .navbar {
         display: none;
     }
+
+    .mobile-menu {
+
+        a {
+            display: block;
+            padding: 14px 16px;
+        }
+    
+        a:hover {
+            background-color: #ddd;
+        }
+    
+        .hideByDefault {
+            display: none;
+        }
+        
+        .hamburger {
+            justify-content: flex-end;
+            padding: 14px 0 14px 93%;
+            color: grey;
+        }
+    
+        .hamburger:hover {
+            background-color: white;
+        }
+    }
 }
 
-.mobile-menu {
+#info {
+
+    margin-top: 100px;
+    font-weight: 800;
 
     a {
-        display: block;
-        padding: 14px 16px;
+        color: white;
     }
 
-    a:hover {
-        background-color: #ddd;
+    @keyframes pulse-black {
+        0% {
+            transform: scale(0.75);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        }
+        
+        70% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        }
+        
+        100% {
+            transform: scale(0.75);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
     }
 
-    .hideByDefault {
-        display: none;
-    }
+    padding-top: 50px;
+    font-family: 'Nunito Sans', sans-serif;
     
-    .hamburger {
-        justify-content: flex-end;
-        padding: 14px 0 14px 93%;
+
+    .name {
+        font-size: 40px;
+        margin-bottom: 15px;
+
+        .color {
+            color: #16697a;
+        }
     }
 
-    .hamburger:hover {
-        background-color: white;
+    .job {
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 45px;
+
+        .title {
+            font-size: 25px;
+            color: #db6400;
+            font-weight: 800;
+        }
     }
+
+    flex-direction: column;
+    align-items: center;
 }
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -124,7 +209,7 @@ nav {
         }
 
         .items:hover {
-            color: silver;
+            color: #333;
         }
 
         .navbar {
