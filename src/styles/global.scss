@@ -194,6 +194,48 @@ nav {
     align-items: center;
 }
 
+#about-section {
+    position: relative;
+    margin-top: 500px;
+    background-color: #e5edf5;
+    height: 400px;
+    border-radius: 25px;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 30px 35px 35px 35px;
+    justify-content: center;
+    flex-direction: column;
+    
+    h1 {
+        position: relative;
+        font-size: 30px;
+        align-self: center;
+    }
+
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+#about-section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../images/web-development.svg");
+    background-size: 100% 100%;
+    opacity: 0.10;
+}
+
+
+
 
 
 

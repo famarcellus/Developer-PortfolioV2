@@ -28,6 +28,7 @@ function Navbar() {
             <li><a className="items" href="#about-section">About</a></li>
             <li><a className="items" href="#projects-section">Projects</a></li>
             <li><a className="items" href="#contact-section">Contact</a></li>
+            <li><a className="items" href="#contact-section">Resume</a></li>
         </div>
 
         <div className="mobile-menu">
@@ -35,6 +36,7 @@ function Navbar() {
             <li><a className="hideByDefault" href="#about-section">About</a></li>
             <li><a className="hideByDefault" href="#projects-section">Projects</a></li>
             <li><a className="hideByDefault" href="#contact-section">Contact</a></li>
+            <li><a className="hideByDefault" href="#contact-section">Resume</a></li>
         </div>
     </nav>
     )
