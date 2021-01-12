@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
+import emailjs, { init } from "emailjs-com"
 
 export default function HTML(props) {
   return (
@@ -48,6 +49,11 @@ export default function HTML(props) {
         </Helmet>
         {props.headComponents}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link> 
+        <script type="text/javascript">
+        {
+          init(process.env.EMAIL_USER_ID)
+        }
+        </script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
