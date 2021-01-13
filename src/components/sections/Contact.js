@@ -1,32 +1,70 @@
-import React from "react"
+import React, { useState } from "react"
 import emailjs from "emailjs-com"
 
 function Contact() {
 
-    const handleSubmit = event => {
+    function EnableModal() {
+        var modal = document.getElementById("myModal").style.display = "block";
+    }
+
+    function CloseModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    function ResetInputFields() {
+        document.getElementsByTagName("input")[1].value = "";
+        document.getElementsByTagName("textarea")[0].value = "";
+    }
+
+    function handleSubmit(event) {
         event.preventDefault();
          // generate a five digit number for the contact_number variable
-         this.contact_number.value = Math.random() * 100000 | 0;
+        //  event.target.contact_number.value = Math.random() * 100000 | 0;
          // these IDs from the previous steps
-         emailjs.sendForm("default_service", 'template_xhx5our', event.target)
+         emailjs.sendForm("default_service", "template_199av6s", event.target, process.env.EMAIL_USER_ID)
            .then(function() {
              console.log('SUCCESS!');
+             EnableModal();
+             ResetInputFields();
              }, function(error) {
                console.log('FAILED...', error);
        });
     }
+
+    const [contact, setContact] = useState({
+        user_email: "",
+        message: ""
+    });
+
+    function handleChange(event) {
+        const { name, value } = event.target;
+
+        setContact(prevValue => {
+            return {
+                ...prevValue,
+                [name]: value
+            }
+        });
+    }
+    
     
 
     return (
-        <section id="contact-section">
+        <section id="contact-section" onClick={CloseModal}>
+            <div id="myModal" className="modal">
+                <div className="modal-content">
+                    <span className="close" onClick={CloseModal}>&times;</span>
+                    <p>Message was sent successfully!</p>
+                </div>
+            </div>
             <h1 className="title">Interested in having me work for your company? Please send me a message below!</h1>
-            <form id="contact-form">
+            <form id="contact-form" onSubmit={handleSubmit}>
                 <input type="hidden" name="contact_number" />
                 <label>Email</label>
-                    <input type="email" name="user_email" placeholder="Enter your Email" autoComplete="off"/>
+                <input type="email" name="user_email" placeholder="Enter your Email" autoComplete="off" onChange={handleChange} value={contact.user_email}/>
                 <label className="message-title">Message</label>
-                    <textarea name="message" placeholder="Enter your message here!"></textarea>
-                <input type="submit" value="Send Message" onSubmit={handleSubmit} />
+                <textarea name="message" placeholder="Enter your message here!" onChange={handleChange} value={contact.message}></textarea>
+                <input type="submit" value="Send Message"/>
             </form>
         </section>
     )
