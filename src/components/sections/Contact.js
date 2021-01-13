@@ -4,7 +4,9 @@ import emailjs from "emailjs-com"
 function Contact() {
 
     function EnableModal() {
-        var modal = document.getElementById("myModal").style.display = "block";
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block"; 
+        modal.focus();
     }
 
     function CloseModal() {
@@ -12,8 +14,10 @@ function Contact() {
     }
 
     function ResetInputFields() {
-        document.getElementsByTagName("input")[1].value = "";
-        document.getElementsByTagName("textarea")[0].value = "";
+        setContact({
+            user_email: "",
+            message: ""
+        });
     }
 
     function handleSubmit(event) {
@@ -50,7 +54,7 @@ function Contact() {
     
 
     return (
-        <section id="contact-section" onClick={CloseModal}>
+        <section id="contact-section" className="no-focus" onClick={CloseModal} tabIndex="0">
             <div id="myModal" className="modal">
                 <div className="modal-content">
                     <span className="close" onClick={CloseModal}>&times;</span>
@@ -60,9 +64,9 @@ function Contact() {
             <h1 className="title">Interested in having me work for your company? Please send me a message below!</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <input type="hidden" name="contact_number" />
-                <label>Email</label>
-                <input type="email" name="user_email" placeholder="Enter your Email" autoComplete="off" onChange={handleChange} value={contact.user_email}/>
-                <label className="message-title">Message</label>
+                <label for="user_email">Email</label>
+                <input type="email" name="user_email" placeholder="Enter your Email" onChange={handleChange} value={contact.user_email}/>
+                <label className="message-title" for="message">Message</label>
                 <textarea name="message" placeholder="Enter your message here!" onChange={handleChange} value={contact.message}></textarea>
                 <input type="submit" value="Send Message"/>
             </form>

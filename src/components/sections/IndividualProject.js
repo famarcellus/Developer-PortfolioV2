@@ -26,8 +26,8 @@ function IndividualProject(props) {
         <article className="single-project rel">
             <h2 className="rel">{props.title}</h2>
             <img className="project-image" src={props.image} alt={props.title} width="100%" height="auto" />
-            <a href={props.sourceLink} ><button className="myButton">Source Link</button></a>
-            <a href={process.env.PUBLIC_URL} ><button className="myButton">Live Link</button></a>
+            <a href={props.sourceLink} tabIndex="-1"><button className="myButton">Source Link</button></a>
+            <a href={process.env.PUBLIC_URL} tabIndex="-1" ><button className="myButton">Live Link</button></a>
             <h3 className="line-height">{props.description}</h3>
             <h3 className="tech-title">Technologies Used</h3>
             {props.technologies.map((item) => {

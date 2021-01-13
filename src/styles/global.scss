@@ -81,6 +81,12 @@ a:visited {
     color: black;
 }
 
+
+.no-focus:focus {
+    outline: 0;
+}
+
+
 .flex-container {
     display: flex;
 }
