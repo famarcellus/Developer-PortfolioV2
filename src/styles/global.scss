@@ -87,7 +87,7 @@ a:visited {
 }
 
 
-.flex-container {
+.display-flex {
     display: flex;
 }
 
@@ -130,7 +130,7 @@ a:visited {
 	top:1px;
 }
 
-nav {
+.navbar {
 
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
@@ -138,7 +138,7 @@ nav {
     list-style-type: none;
     z-index: 2;
 
-    .navbar {
+    .md-lg-screen {
         display: none;
     }
 
@@ -351,7 +351,7 @@ nav {
     button:first-of-type {
         margin: 15px 10px 15px 0;
     }
-    
+
 }
 
 
@@ -484,7 +484,7 @@ nav {
 
 @media only screen and (min-width: 768px) {
 
-    nav {
+    .navbar {
 
         .items {
             margin-left: 22px;
@@ -495,7 +495,7 @@ nav {
             color: #333;
         }
 
-        .navbar {
+        .md-lg-screen {
             display: flex;
             justify-content: flex-end;
             margin-top: 10px;

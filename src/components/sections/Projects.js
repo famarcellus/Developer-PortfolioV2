@@ -4,9 +4,9 @@ import IndividualProject from "../sections/IndividualProject"
 
 function Projects() {
     return (
-    <section className="flex-container no-focus" id="projects-section" tabIndex="0" role="article">
+    <section className="display-flex no-focus" id="projects-section" tabIndex="0" role="article">
         <h1 className="">Projects</h1>
-        <div className="flex-container col-4-2">
+        <div className="display-flex col-4-2">
             {ProjectData.map((item) => {
                 return (
                     <IndividualProject 

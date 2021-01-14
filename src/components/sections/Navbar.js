@@ -23,8 +23,8 @@ function Navbar() {
 
 
     return (
-    <nav>
-        <div className="navbar flex-container">
+    <nav className="navbar">
+        <div className="md-lg-screen display-flex">
             <li><a className="items" href="#about-section">About</a></li>
             <li><a className="items" href="#projects-section">Projects</a></li>
             <li><a className="items" href="#contact-section">Contact</a></li>
@@ -32,7 +32,7 @@ function Navbar() {
         </div>
 
         <div className="mobile-menu">
-            <li><a className="hamburger flex-container" href="javascript:void(0)" onClick={toggleMenu}><i className="fa fa-bars"></i></a></li>
+            <li><a className="hamburger display-flex" href="javascript:void(0)" onClick={toggleMenu}><i className="fa fa-bars"></i></a></li>
             <li><a className="hideByDefault" href="#about-section">About</a></li>
             <li><a className="hideByDefault" href="#projects-section">Projects</a></li>
             <li><a className="hideByDefault" href="#contact-section">Contact</a></li>

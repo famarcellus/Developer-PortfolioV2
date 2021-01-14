@@ -2,7 +2,7 @@ import React from "react"
 
 function AboutMe() {
     return (
-        <section className="flex-container line-height no-focus" id="about-section" tabIndex="0" role="article">
+        <section className="display-flex line-height no-focus" id="about-section" tabIndex="0" role="article">
             <h1 className="rel no-focus">About Me</h1>
             <h2 className="rel no-focus">I am a Front End Developer finishing up my last year to receive my <span>Bachelor's Degree in Computer Science.</span> I enjoy working 
             on the Front End using <span>React</span> and I'm also familiar with the Back End of applications. 
