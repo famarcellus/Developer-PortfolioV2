@@ -1,8 +1,8 @@
 import React from "react";
-import ReactLogo from "../../images/react-logo.svg"
-import GatsbyLogo from "../../images/gatsby-logo.svg"
-import EmailLogo from "../../images/email-logo.svg"
-import SCSSLogo from "../../images/sass-logo.svg"
+import ReactLogo from "../../images/logos/react.svg"
+import GatsbyLogo from "../../images/logos/gatsby.svg"
+import EmailLogo from "../../images/logos/email.svg"
+import SCSSLogo from "../../images/logos/sass.svg"
 
 
 function IndividualProject(props) {
@@ -23,8 +23,8 @@ function IndividualProject(props) {
     }
 
     return (
-        <article className="single-project rel">
-            <h2 className="rel">{props.title}</h2>
+        <article className="single-project">
+            <h2 className="">{props.title}</h2>
             <img className="project-image" src={props.image} alt={props.title} width="100%" height="auto" />
             <a href={props.sourceLink} tabIndex="-1"><button className="myButton">Source Link</button></a>
             <a href={props.liveLink} tabIndex="-1" ><button className="myButton">Live Link</button></a>

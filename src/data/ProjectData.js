@@ -1,4 +1,4 @@
-import PortfolioSS from "../images/portfolio.png"
+import PortfolioSS from "../images/projects/portfolio.png"
 
 const Details = [
     {

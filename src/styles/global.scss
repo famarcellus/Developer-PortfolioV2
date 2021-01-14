@@ -262,7 +262,7 @@ nav {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url("../images/web-development.svg");
+    background-image: url("../images/background/web-development.svg");
     background-size: 100% 100%;
     opacity: 0.07;
 }
@@ -351,23 +351,7 @@ nav {
     button:first-of-type {
         margin: 15px 10px 15px 0;
     }
-
     
-
-   
-    
-}
-
-#projects::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-image: url("../images/project.svg");
-    background-size: 100% 100%;
-    opacity: 0.04;
 }
 
 
