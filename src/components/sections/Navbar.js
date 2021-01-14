@@ -36,7 +36,7 @@ function Navbar() {
             <li><a className="hideByDefault" href="#about-section">About</a></li>
             <li><a className="hideByDefault" href="#projects-section">Projects</a></li>
             <li><a className="hideByDefault" href="#contact-section">Contact</a></li>
-            <li><a className="hideByDefault" href="#contact-section">Resume</a></li>
+            <li><a className="hideByDefault" href="https://docs.google.com/document/d/1QhR37R64BD3vKCnjmn53x5i37IjoLAv1DTYM6l80r7M/edit" target="_blank">Resume</a></li>
         </div>
     </nav>
     )
