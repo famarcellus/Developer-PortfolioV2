@@ -71,24 +71,47 @@ body {
     background-size: 900px 900px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+// a {
+//     text-decoration: none;
+//     // color: black;
+// }
 
-a:visited {
-    text-decoration: none;
-    color: black;
-}
+// a:visited {
+//     // text-decoration: none;
+//     color: black;
+// }
 
 
 .no-focus:focus {
     outline: 0;
 }
 
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
 
 .display-flex {
     display: flex;
+}
+
+.no-list-style {
+    list-style: none;
+}
+
+.black-text:visited {
+    color: black;
+}
+
+.color-grey {
+    color:grey;
 }
 
 [class*="col-"] {
@@ -99,6 +122,10 @@ a:visited {
     flex: 0 0 78%;
     margin-left: 4%;
     flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .rel {
@@ -131,42 +158,41 @@ a:visited {
 }
 
 .navbar {
-
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     color: grey;
-    list-style-type: none;
     z-index: 2;
 
-    .md-lg-screen {
-        display: none;
-    }
 
-    .mobile-menu {
+    .item-holder {
+        text-decoration: none;
+        color: black;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 0;
 
-        a {
-            display: block;
+        .items {
             padding: 14px 16px;
-        }
-    
-        a:hover {
-            background-color: #ddd;
-        }
-    
-        .hideByDefault {
             display: none;
         }
-        
+
+        .items:hover {
+            background-color: #ddd;
+        }
+
         .hamburger {
             justify-content: flex-end;
             padding: 14px 0 14px 93%;
-            color: grey;
+            display: block;
         }
     
         .hamburger:hover {
             background-color: white;
         }
     }
+
 }
 
 #info {
@@ -486,24 +512,26 @@ a:visited {
 
     .navbar {
 
-        .items {
-            margin-left: 22px;
-            margin-right: 22px;
-        }
-
-        .items:hover {
-            color: #333;
-        }
-
-        .md-lg-screen {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 10px;
-        }
-    
-        .mobile-menu {
+        .hideByDefault {
             display: none;
         }
+
+        .item-holder {
+            flex-direction: row;
+
+            .items {
+                margin-left: 22px;
+                margin-right: 22px;
+                padding: 0;
+                display: inline-block;
+            }
+    
+            .items:hover {
+                background-color: white;
+                color: #333;
+            }
+        }
+        
     }
     
     .col-4-2 {
