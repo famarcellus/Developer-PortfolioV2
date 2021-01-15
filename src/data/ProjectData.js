@@ -11,7 +11,7 @@ const Details = [
             "SCSS"
         ],
         "image": PortfolioSS,
-        "liveLink": process.env.PUBLIC_URL,
+        "liveLink": process.env.GATSBY_PUBLIC_URL,
         "sourceLink": "https://github.com/famarcellus/Developer-PortfolioV2"
         
     }

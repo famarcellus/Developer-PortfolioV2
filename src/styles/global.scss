@@ -102,6 +102,10 @@ body {
     display: flex;
 }
 
+.align-center {
+    align-items: center;
+}
+
 .no-list-style {
     list-style: none;
 }
@@ -136,31 +140,11 @@ body {
     line-height: 1.5;
 }
 
-.ctaButton {
-    will-change: transform, box-shadow;
-	background-color:#292929;
-	border-radius:28px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:17px;
-	padding:16px 31px;
-    text-decoration:none;
-    font-family: 'Nunito Sans', sans-serif;
-    animation: pulse-black 3.5s infinite;
-}
-.ctaButton:hover {
-	background-color: #333;
-}
-.ctaButton:active {
-	position:relative;
-	top:1px;
-}
+
 
 .navbar {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
-    color: grey;
     z-index: 2;
 
 
@@ -169,7 +153,6 @@ body {
         color: black;
         list-style-type: none;
         display: flex;
-        flex-direction: column;
         justify-content: flex-end;
         padding-left: 0;
 
@@ -195,17 +178,42 @@ body {
 
 }
 
-#info {
-
+.info-section {
     margin-top: 100px;
     font-weight: 800;
     background-color: white;
     margin-left: 5%;
+    display: flex;
+    padding-top: 50px;
+    font-family: 'Nunito Sans', sans-serif;
     
+    .intro {
+        font-size: 40px;
+        margin-bottom: 15px;
+        padding-left: 15%;
 
-    a {
+        .color-dark-cyan {
+            color: #16697a;
+        }
+    }
+
+    .statement {
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 45px;
+
+        .job-title {
+            font-size: 25px;
+            color: #db6400;
+            font-weight: 800;
+        }
+    }
+
+    .cta {
         color: white;
     }
+
 
     @keyframes pulse-black {
         0% {
@@ -224,35 +232,30 @@ body {
         }
     }
 
-    padding-top: 50px;
-    font-family: 'Nunito Sans', sans-serif;
-    
-
-    .name {
-        font-size: 40px;
-        margin-bottom: 15px;
-        padding-left: 15%;
-
-        .color {
-            color: #16697a;
-        }
+    .ctaButton {
+        will-change: transform, box-shadow;
+        background-color:#292929;
+        border-radius:28px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-size:17px;
+        padding:16px 31px;
+        text-decoration:none;
+        font-family: 'Nunito Sans', sans-serif;
+        
     }
 
-    .job {
-        font-weight: 600;
-        font-size: 22px;
-        margin-top: 0;
-        margin-bottom: 45px;
-
-        .title {
-            font-size: 25px;
-            color: #db6400;
-            font-weight: 800;
-        }
+    .ctaButton:hover {
+        background-color: #333;
     }
-
-    flex-direction: column;
-    align-items: center;
+    .ctaButton:active {
+        position:relative;
+        top:1px;
+    }
+    .animated {
+        animation: pulse-black 3.5s infinite;
+    }
 
 }
 
@@ -539,11 +542,11 @@ body {
         flex-wrap: nowrap;
     }
 
-    #info {
+    .info-section {
         
         margin-left: 0%;
 
-        .name {
+        .intro {
             padding-left: 0;
         }
     }

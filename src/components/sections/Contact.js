@@ -25,7 +25,7 @@ function Contact() {
          // generate a five digit number for the contact_number variable
         //  event.target.contact_number.value = Math.random() * 100000 | 0;
          // these IDs from the previous steps
-         emailjs.sendForm("default_service", "template_199av6s", event.target, process.env.EMAIL_USER_ID)
+         emailjs.sendForm("default_service", "template_199av6s", event.target, process.env.GATSBY_EMAIL_USER_ID)
            .then(function() {
              console.log('SUCCESS!');
              EnableModal();
