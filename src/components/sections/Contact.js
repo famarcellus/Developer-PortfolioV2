@@ -4,13 +4,13 @@ import emailjs from "emailjs-com"
 function Contact() {
 
     function EnableModal() {
-        var modal = document.getElementById("myModal");
+        var modal = document.getElementsByClassName("modal")[0];
         modal.style.display = "block"; 
         modal.focus();
     }
 
     function CloseModal() {
-        document.getElementById("myModal").style.display = "none";
+        document.getElementsByClassName("modal")[0].style.display = "none";
     }
 
     function ResetInputFields() {
@@ -54,21 +54,23 @@ function Contact() {
     
 
     return (
-        <section id="contact-section" className="no-focus" onClick={CloseModal} tabIndex="0">
-            <div id="myModal" className="modal">
-                <div className="modal-content">
-                    <span className="close" onClick={CloseModal}>&times;</span>
+        <section className="contact-section no-focus" onClick={CloseModal} tabIndex="0">
+            <div className="modal">
+                <div className="content">
+                    <span className="close-button" onClick={CloseModal}>&times;</span>
                     <p>Message was sent successfully!</p>
                 </div>
             </div>
-            <h1 className="title">Interested in having me work for your company? Please send me a message below!</h1>
+            <h1 className="title color-dark-blue">Interested in having me work for your company? Please send me a message below!</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <input type="hidden" name="contact_number" />
-                <label for="user_email">Email</label>
-                <input type="email" name="user_email" placeholder="Enter your Email" onChange={handleChange} value={contact.user_email}/>
-                <label className="message-title" for="message">Message</label>
-                <textarea name="message" placeholder="Enter your message here!" onChange={handleChange} value={contact.message}></textarea>
-                <input type="submit" value="Send Message"/>
+
+                <label className="email-label input-label" for="user_email">Email</label>
+                <input className="email-input input-field" type="email" name="user_email" placeholder="Enter your Email" onChange={handleChange} value={contact.user_email}/>
+
+                <label className="message-label message-title input-label" for="message">Message</label>
+                <textarea className="message-input" name="message" placeholder="Enter your message here!" onChange={handleChange} value={contact.message}></textarea>
+                <input className="submit-input input-field" type="submit" value="Send Message"/>
             </form>
         </section>
     )
