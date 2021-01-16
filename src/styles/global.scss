@@ -102,8 +102,12 @@ body {
     display: flex;
 }
 
-.align-center {
+.align-i-center {
     align-items: center;
+}
+
+.align-s-center {
+    align-self: center;
 }
 
 .no-list-style {
@@ -131,6 +135,9 @@ body {
 .flex-column {
     flex-direction: column;
 }
+.justify-center {
+    justify-content: center;
+}
 
 .rel {
     position: relative;
@@ -140,6 +147,9 @@ body {
     line-height: 1.5;
 }
 
+.header-text {
+    font-size: 30px;
+}
 
 
 .navbar {
@@ -259,32 +269,26 @@ body {
 
 }
 
-#about-section {
+.about-section {
     position: relative;
     border: 2px solid #447bb2;
     border-radius: 25px;
     background-color: white;
     margin: 375px 7% 50px 7%;
     padding: 30px 35px 35px 35px;
-    justify-content: center;
-    flex-direction: column;
-    
-    h1 {
-        font-size: 30px;
-        align-self: center;
-    }
+    display: flex;
 
-    h2 {
+    .content {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
 
-        span {
+        .bold {
             font-weight: 500;
         }
     }
 }
 
-#about-section::before {
+.about-section::before {
     content: "";
     position: absolute;
     top: 0px;
