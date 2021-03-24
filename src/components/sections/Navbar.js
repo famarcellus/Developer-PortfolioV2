@@ -29,7 +29,7 @@ function Navbar() {
                 <li className="display"><a className="items no-text-decoration black-text" href="#about-section">About</a></li>
                 <li className="display"><a className="items no-text-decoration black-text" href="#projects-section">Projects</a></li>
                 <li className="display"><a className="items no-text-decoration black-text" href="#contact-section">Contact</a></li>
-                <li className="display"><a className="items no-text-decoration black-text" href={resumeLink} target="_blank" rel="noopener noreferrer">Resume</a></li>
+                {/* <li className="display"><a className="items no-text-decoration black-text" href={resumeLink} target="_blank" rel="noopener noreferrer">Resume</a></li> */}
             </ul>
         </div>
     </nav>

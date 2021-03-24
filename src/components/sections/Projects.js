@@ -4,7 +4,7 @@ import IndividualProject from "../sections/IndividualProject"
 
 function Projects() {
     return (
-    <section className="projects-section justify-center flex-column align-i-center no-focus" tabIndex="0" role="article">
+    <section id= "projects-section" className="justify-center flex-column align-i-center no-focus" tabIndex="0" role="article">
         <h1 className="title header-text">Projects</h1>
         <div className="projects-container col-4-2">
             {ProjectData.map((item) => {

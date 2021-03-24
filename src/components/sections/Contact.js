@@ -54,7 +54,7 @@ function Contact() {
     
 
     return (
-        <section className="contact-section no-focus" onClick={CloseModal} tabIndex="0">
+        <section id="contact-section" className="no-focus" onClick={CloseModal} tabIndex="0">
             <div className="modal">
                 <div className="content">
                     <span className="close-button" onClick={CloseModal}>&times;</span>
