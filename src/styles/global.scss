@@ -512,15 +512,16 @@ body {
             flex-direction: row;
 
             .items {
-                margin-left: 22px;
-                margin-right: 22px;
-                padding: 0;
+                margin-left: 18px;
+                margin-right: 18px;
+                padding: 0 5px;
                 display: inline-block;
             }
     
             .items:hover {
-                background-color: white;
+                background-color: #d3d3d3;
                 color: #333;
+                border-radius: 3px;
             }
         }
         
