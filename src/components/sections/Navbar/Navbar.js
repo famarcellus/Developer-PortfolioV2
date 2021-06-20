@@ -1,4 +1,5 @@
 import React from "react"
+import "./Navbar.scss"
 
 function Navbar() {
 
@@ -19,7 +20,6 @@ function Navbar() {
         }
     }
 
-    var resumeLink = "https://docs.google.com/document/d/1QhR37R64BD3vKCnjmn53x5i37IjoLAv1DTYM6l80r7M/edit";
 
     return (
     <nav className="navbar">
@@ -29,7 +29,6 @@ function Navbar() {
                 <li className="display"><a className="items no-text-decoration black-text" href="#about-section">About</a></li>
                 <li className="display"><a className="items no-text-decoration black-text" href="#projects-section">Projects</a></li>
                 <li className="display"><a className="items no-text-decoration black-text" href="#contact-section">Contact</a></li>
-                {/* <li className="display"><a className="items no-text-decoration black-text" href={resumeLink} target="_blank" rel="noopener noreferrer">Resume</a></li> */}
             </ul>
         </div>
     </nav>

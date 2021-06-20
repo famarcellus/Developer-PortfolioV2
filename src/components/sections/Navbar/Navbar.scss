@@ -1,0 +1,72 @@
+.navbar {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+
+
+    .item-holder {
+        text-decoration: none;
+        color: black;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0;
+
+        .items {
+            padding: 14px 16px;
+            display: none;
+        }
+
+        .items:hover {
+            background-color: #ddd;
+        }
+
+        .hamburger {
+            justify-content: flex-end;
+            padding: 14px 0 14px 93%;
+            display: block;
+        }
+    
+        .hamburger:hover {
+            background-color: white;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    #projects-section {
+        margin: 150px 19% 150px 19%;
+    }
+
+    .navbar {
+
+        .hideByDefault {
+            display: none;
+        }
+
+        .item-holder {
+            flex-direction: row;
+
+            .items {
+                margin-left: 18px;
+                margin-right: 18px;
+                padding: 0 5px;
+                display: inline-block;
+            }
+    
+            .items:hover {
+                background-color: #d3d3d3;
+                color: #333;
+                border-radius: 3px;
+            }
+        }
+        
+    }
+    
+    // .col-4-2 {
+    //     flex: 0 0 44%;
+    //     flex-wrap: nowrap;
+    // }
+}

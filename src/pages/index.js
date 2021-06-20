@@ -1,10 +1,10 @@
 import React from "react"
-import Navbar from "../components/sections/Navbar"
-import Info from "../components/sections/Info"
-import AboutMe from "../components/sections/AboutMe"
-import Projects from "../components/sections/Projects"
-import Contact from "../components/sections/Contact"
-import Footer from "../components/sections/Footer"
+import Navbar from "../components/sections/Navbar/Navbar"
+import Info from "../components/sections/Info/Info"
+import AboutMe from "../components/sections/About-Me/AboutMe"
+import Projects from "../components/sections/Projects/Projects"
+import Contact from "../components/sections/Contact/Contact"
+import Footer from "../components/sections/Footer/Footer"
 
 export default function Home() {
   return (

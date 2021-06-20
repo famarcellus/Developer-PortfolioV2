@@ -1,6 +1,7 @@
 import React from "react"
-import Github from "../../images/social/github.svg"
-import LinkedIn from "../../images/social/linkedin.svg"
+import "./Footer.scss"
+import Github from "../../../images/social/github.svg"
+import LinkedIn from "../../../images/social/linkedin.svg"
 
 function Footer() {
     return (

@@ -1,8 +1,8 @@
 import React from "react";
-import ReactLogo from "../../images/logos/react.svg"
-import GatsbyLogo from "../../images/logos/gatsby.svg"
-import EmailLogo from "../../images/logos/email.svg"
-import SCSSLogo from "../../images/logos/sass.svg"
+import ReactLogo from "../../../images/logos/react.svg"
+import GatsbyLogo from "../../../images/logos/gatsby.svg"
+import EmailLogo from "../../../images/logos/email.svg"
+import SCSSLogo from "../../../images/logos/sass.svg"
 
 
 function IndividualProject(props) {

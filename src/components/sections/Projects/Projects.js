@@ -1,6 +1,7 @@
 import React from "react"
-import ProjectData from "../../data/ProjectData"
-import IndividualProject from "../sections/IndividualProject"
+import "./Projects.scss"
+import ProjectData from "../../../data/ProjectData"
+import IndividualProject from "./IndividualProject"
 
 function Projects() {
     return (

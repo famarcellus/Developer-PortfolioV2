@@ -1,0 +1,96 @@
+#projects-section {
+    border-radius: 25px;
+    border: 2px solid #ffa62b;
+    background-color: white;
+    margin: 150px 7% 200px 7%;
+    display: flex;
+
+    .title {
+        margin-bottom: 90px;
+    }
+
+    .projects-container {
+        display: flex;
+
+        .single-project {
+            padding: 30px 20px 40px 20px;
+            margin-bottom: 40px;
+    
+            .screenshot {
+                height: auto;
+                width: 100%;
+                border: 2px solid grey;
+                border-radius: 5px;
+            }
+
+            .light-text {
+                font-weight: 400;
+            }
+
+            .tech-title {
+                margin-top: 40px;
+                margin-bottom: 0;
+                font-weight: 500;
+            }
+
+            .tech-name {
+                display: inline-block;
+                margin-right: 20px;
+        
+                .logo {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    
+    }
+
+
+    .myButton {
+        box-shadow:inset 0px 1px 0px 0px #9fb4f2;
+        background-color:#7892c2;
+        border-radius:6px;
+        border:1px solid #4e6096;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-size:15px;
+        font-weight:bold;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #283966;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .myButton:hover {
+        background-color:#476e9e;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+
+    .source-button {
+        margin: 15px 10px 15px 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .projects-section{
+        .screenshot {
+            height: 225px;
+            width: 631px;
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #projects-section {
+        margin: 150px 25% 150px 25%;
+    }
+}

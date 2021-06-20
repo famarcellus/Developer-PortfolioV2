@@ -1,0 +1,35 @@
+.footer-section {
+    background-color: #2b2b2b;
+    margin-top: 70px;
+    padding: 50px 0 20px 7%;
+    
+    .color-white {
+        color: white;
+    }
+
+    .title {
+        padding-right: 25%;
+        margin-bottom: 30px;
+    }
+
+    .social-link {
+        margin-right: 93%;
+        margin-bottom: 15px;
+    }
+
+    .social-link:hover {
+        filter: invert(.3); 
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .copyright {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+}
