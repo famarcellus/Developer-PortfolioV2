@@ -1,9 +1,9 @@
 import PortfolioSS from "../images/projects/portfolio.png"
-import ShareTunesImg from "../images/projects/shareTunes.png";
+import TuneShareImg from "../images/projects/tuneShare.png";
 
 const Details = [
     {
-        "title": "Share Your Tunes",
+        "title": "Tune Share",
         "description": "Music sharing social media website. Features include searchable music, posting & commenting, and a friend system. Music interests found through searches can be added directly to a user's profile page for others to view.",
         "technologies": [
             "React",
@@ -14,7 +14,7 @@ const Details = [
             "date-fns",
             "SCSS"
         ],
-        "image": ShareTunesImg,
+        "image": TuneShareImg,
         "liveLink": "https://tuneshare.netlify.app/",
         "sourceLink": "https://github.com/famarcellus/share-your-tunes"
     },
