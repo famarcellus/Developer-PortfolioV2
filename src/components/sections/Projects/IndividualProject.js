@@ -19,6 +19,16 @@ function IndividualProject(props) {
                 return EmailLogo;
             case "SCSS":
                 return SCSSLogo;
+            case "Ant Design Charts": 
+                return "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+            case "Ant Design":
+                return "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg";
+            case "date-fns": 
+                return "https://avatars.githubusercontent.com/u/14921202?s=200&v=4";
+            case "Redux":
+                return "https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png"
+            default: 
+                return "";
         }
     }
 
@@ -32,7 +42,8 @@ function IndividualProject(props) {
             <h3 className="tech-title">Technologies Used</h3>
             {props.technologies.map((item) => {
                 return (
-                    <h3 className="tech-name light-text">{item} <img className="logo" src={FindTechnology(item)} alt={item}></img></h3>
+                    <h3 className="tech-name light-text">{item} 
+                    {FindTechnology(item) && <img className="logo" src={FindTechnology(item)} alt={item}></img>}</h3>
                 )
             })}
         </article>
